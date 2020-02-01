@@ -1,9 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url('images/bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: skyblue;
 }
 
 *{
@@ -114,6 +112,13 @@ label {
 }
 
 /****Intro-Section****/   
+.intro-and-imgsection{
+    width: 100%;
+    background-image: url('images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .intro-section{
     width: 100%;
     text-align: center;
@@ -150,7 +155,6 @@ label {
 /****images-section****/
 #images-sectionA, #images-sectionB{
     width: 100%;
-    text-align: center;
 }
 
 #images-sectionA h1{
@@ -158,7 +162,7 @@ label {
     font-size: 15px;
     font-weight: 600;
     padding: 10px 8px 10px 8px;
-    margin: 0 auto 20px;
+    margin: 20px auto;
     color:#ffffff;
     border-radius: 20%;
     font-family: sans-serif;
@@ -169,16 +173,15 @@ label {
 }
 
 #image-selectionA {
-    width: 95%;
-    margin: 0 auto;
-    padding: 0 10px 0 10px;
+    width: 100%;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
 }
 
 #image-selectionA img{
-    width: 300px;
-    height: 300px;
+    width: 240px;
+    height: 240px;
     border-radius: 20px;
 }
 
@@ -188,7 +191,7 @@ label {
 }
 
 #images-sectionB{
-    padding: 10px 10px 30px 10px;
+    padding: 0 20px 20px 20px;
     background: url('images/image11.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -197,18 +200,19 @@ label {
 .img-selection-div{
     width: 100%;
     display: flex;
+    justify-content: space-between;
 }
 
 #image-selections{
-    width: 50%;
-    display: flex;
+    width: 49%;
     margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
 }
 
 #image-selections img{
-    width: 50%;
-    height: 250px;
-    margin: 5px;
+    width: 48%;
+    height: 240px;
     border-radius: 20px;
 }
 
@@ -509,7 +513,6 @@ footer{
     width: 15px;
     height: 15px;
     border-radius: 10px;
-    margin-right: 5px;
 }
 
 .socialmedia img:hover {
@@ -562,14 +565,15 @@ footer{
 
     /****images-section****/
     #image-selectionA {
-        width: 100%; 
+        width: 95%; 
         display: block; 
+        margin: 30px auto; 
     }
 
     #image-selectionA img{
-        width: 90%; 
-        height: 400px; 
-        margin-top: 30px; 
+        width: 100%; 
+        height: 500px; 
+        margin-bottom: 20px;
     }
 
     /****video****/
@@ -583,7 +587,7 @@ footer{
 
     /****images-section****/
     #images-sectionB{
-        padding-bottom: 30px;
+        margin-top: 20px;
     }
 
     .img-selection-div{
@@ -592,7 +596,7 @@ footer{
     
     #image-selections{
         width: 95%; 
-        margin: 0 auto;
+        margin: 30px auto;
     }
     
     /****price-section****/
