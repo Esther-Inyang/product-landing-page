@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Landing Page</title>
+    <title>Product Landing Page</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
@@ -22,7 +22,7 @@
                     <label for="toggle" title="click">&#9776</label>
                     <input type="checkbox" id="toggle">
                     <ul id="menu">
-                        <!--inline links, link to the sepcific topic BELOW ON ID-->
+                        <!--inline links, link to the specific topic BELOW ON ID-->
                         <li class="nav-link"><a href="#">Home</a></li>
                         <li class="nav-link"><a href="#contact-us">Contact</a></li>
                         <li class="nav-link"><a href="#our-work">About</a></li>
@@ -45,7 +45,7 @@
             
             <div class="offer-div">
                 <div class="contact-btn">
-                    <a href="#price-div" id="offer-btn">Our Offer</a>
+                    <a href="#price-box" id="offer-btn">Our Offer</a>
                     <a href="#contact-us" id="contact-btn">Contact Us</a>
                 </div>
             </div>   
@@ -64,12 +64,13 @@
     <section id="video-section">
         <p id="video-title">My World Needs you</p>
 
-        <video id="video" controls>
+        <video id="video" controls muted autoplay>
             <source src="MyWorldNeedsYou.mp4" type="video/mp4">
+            Your browser does not support the video tag.
         </video>
     </section>
 
-    
+
     <section id="images-sectionB">
         <div class="img-selection-div">
             <div id="image-selections">
@@ -112,9 +113,7 @@
                 </div>
                 <div class="price-desc">
                     <p><p id="price">($500)<br/>6 Months plan</p>
-                    This is the box that contains all the financial information of the company.
-                    What the company offer and the price for each of those products will be specified 
-                    here. the items will be listed here.</p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo laboriosam consectetur officiis aliquam nam vitae pariatur, autem ex, expedita aspernatur molestias, esse commodi. Ab laborum fugit minima corporis velit optio!</p>
                     <button class="pay-btn"><a href="#">Pay Now</a></button>
                 </div>
             </div>
@@ -125,9 +124,7 @@
                 </div>
                 <div class="price-desc">
                     <p><p id="price">($1500)<br/>1 year plan</p>
-                    This is the box that contains all the financial information of the company.
-                    What the company offer and the price for each of those products will be specified 
-                    here. the items will be listed here.</p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, hic labore sapiente quis quam eum nisi nostrum nemo illo blanditiis, aliquam veritatis, et nam excepturi libero! Eveniet vel illo eos?Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, amet? </p>
                     <button class="pay-btn"><a href="#">Pay Now</a></button>
                 </div>
             </div>
@@ -138,9 +135,7 @@
                 </div>
                 <div class="price-desc">
                     <p><p id="price">($1900)<br/>2 years plan</p>
-                    This is the box that contains all the financial information of the company.
-                    What the company offer and the price for each of those products will be specified 
-                    here. the items will be listed here.</p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea consectetur tenetur harum ipsum? Sequi ipsa quam voluptatum, quis sunt magnam sed ratione harum libero. Ex sequi a maiores distinctio, ipsa repellendus aspernatur nemo accusamus eum explicabo corporis omnis natus soluta..</p>
                     <button class="pay-btn"><a href="#">Pay Now</a></button>
                 </div>
             </div>
@@ -158,21 +153,20 @@
                 </div>
             </div>
 
-            <form id="form" action="https://www.freecodecamp/email-submit">
+            <form id="form" action="https://www.freecodecamp/email-submit" method="POST" target="_blank">
                 <fieldset> 
-                    <legend id="contact-us">Message Us</legend>
+                    <legend id="contact-us">Message us</legend>
 
-                    <input type="text" id="name" placeholder="Enter Your Name" required><br/>
+                    <input type="text" id="name" name="name" placeholder="Enter full name" required><br/>
                     
-                    <input type="text" id="email" placeholder="Enter Your Email" required><br/>
+                    <input type="email" id="email" name="email "placeholder="Enter your email" required><br/>
 
-                    <textarea placeholder="Please Enter Your Comment here..."></textarea><br/>
+                    <textarea name="textarea" placeholder="Please enter your comment here.."></textarea><br/>
 
-                    <input type="submit" value="Submit" >
+                    <button type="submit" id="submit">Submit</button>
 
                     <!--submit to
-                    
-                    (use this mock URL: https://www.freecodecamp.com/email-submit (https://www.freecodecamp.com/email-submit)) that confirms the email address was entered and that it posted successfully-->
+                    (use this mock URL: (https://www.freecodecamp.com/email-submit)) that confirms the email address was entered and that it posted successfully-->
                 </fieldset>
             </form>
         </section>
@@ -191,8 +185,9 @@
 
         <div class="copyrite">
             &copy; copyrite 2019 Designed by queenest.com
-        </div>
-          
-    </footer>         
+        </div> 
+    </footer> 
+    
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>

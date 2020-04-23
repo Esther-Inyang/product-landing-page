@@ -99,7 +99,7 @@ nav ul li a:hover {
 }
 
 /****toggle****/
-label {
+label{
     font-size: 30px;
     display: none;
     width: 26px;
@@ -107,7 +107,7 @@ label {
     color: #ffffff; 
 }
 
-#toggle {
+#toggle{
     display: none;
 }
 
@@ -408,7 +408,7 @@ form{
     height: auto;
     margin: 0 auto;
     padding: 30px;
-    background-color: cadetblue;
+    background-color: rgba(96, 157, 159, .8);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -425,19 +425,20 @@ legend{
     color: #562323;
 }
 
-input[type="text"]{
+input[type="text"],
+input[type="email"]{
     width: 100%;
     padding: 8px 10px;
     font-size: 15px;
     border-radius: 5px;
     outline: none;
     border: none; 
-    border: 1px solid #562323;
+    border: 1.5px solid #562323;
     margin: 10px 0px;
 }
 
-input[type="text"]:focus{
-    border: 1.5px solid #562323;
+input[type="text"]:focus, input[type="email"]:focus{
+    border: 1.5px solid lightblue;
 }
 
 textarea{
@@ -449,11 +450,11 @@ textarea{
     font-size: 15px;
     margin-top: 20px;
     outline: none;
-    border: 1px solid #562323;
+    border: 1.4px dashed #562323;
 }
 
 textarea:focus{
-    border: 1.5px solid #562323;
+    border: 1.5px solid lightblue;
 }
 
 #comment{
@@ -462,11 +463,12 @@ textarea:focus{
     font-size: 18px;
 }
 
-input[type="submit"]{
+#submit{
+    color: #562323;
     width: 100px;
     margin-top: 20px;
     padding: 5px;
-    border-radius: 10px;
+    border-radius: 5px;
     font-size: 18px;
     font-weight: 600;
     border: none; 
@@ -474,14 +476,9 @@ input[type="submit"]{
     border: 1.5px solid #562323;
 }
 
-input[type="submit"] {
-    color: maroon;
-    font-weight:600;
-    text-decoration: none;
-}
-input[type="submit"]:hover{
-    background: whitesmoke;
-    box-shadow: 1px 2px 3px #562323;
+#submit:hover{
+    font-weight: 600;
+    background: lightblue;
 }
 
 
